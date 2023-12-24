@@ -1,0 +1,128 @@
+@font-face {
+  font-family: 'Figtree';
+  src: url('../assets/fonts/Figtree-VariableFont_wght.ttf') format('woff2-variations');
+  src: url('../assets/fonts/Figtree-VariableFont_wght.ttf') format('woff2') tech('variations');
+}
+
+:root {
+  --color-primary: hsl(47, 88%, 63%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-grey: hsl(0, 0%, 50%);
+  --color-black: hsl(0, 0%, 7%);
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+img, svg {
+    vertical-align: middle;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Figtree';
+  color: var(--color-black);
+  font-size: 1rem;
+  line-height: 1.5;
+  width:100%;
+  min-height:100vh;
+  background-color: var(--color-primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*
+  width: 90%; and max-width: 384px; is use to get the same look.
+  It is always the true approach to manage the width of a card by page column or grid system.
+  So just use width: 100%; thats all...
+*/
+.bpc-card {
+  width: 90%;
+  max-width: 384px;
+  padding: 1.5rem;
+  border: 1px solid var(--color-black);
+  border-radius: 1.25rem;
+  background-color: var(--color-white);
+  box-shadow: 0.5rem 0.5rem 0px 0px var(--color-black);
+  transition: box-shadow 150ms ease;
+}
+.bpc-card:hover {
+  box-shadow: 1rem 1rem 0px 0px var(--color-black);
+}
+.bpc-card-img {
+  width: 100%;
+  margin-bottom: 1.5rem;
+  border-radius: 0.75rem;
+}
+.bcp-card-tagcontainer {
+  width: 100%;
+  margin-bottom: 0.625rem;
+}
+.bcp-card-tag {
+  color: var(--color-black);
+  font-size: 0.875rem;
+  font-weight: 800;
+  text-decoration: none;
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.25rem;
+  background-color: var(--color-primary);
+  display: inline-block;
+}
+.bcp-card-date {
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  display: inline-block;
+}
+.bpc-card .bcp-card-title {
+  color: var(--color-black);
+  font-size: 1.5rem;
+  font-weight: 800;
+  text-decoration: none;
+  margin-bottom: 0.75rem;
+  display: block;
+  transition: color 150ms ease;
+}
+.bpc-card .bcp-card-title:hover {
+  color: var(--color-primary);
+}
+.bcp-card-previewtext {
+  color: var(--color-grey);
+  font-weight: 600;
+  margin-bottom: 1.375rem;
+}
+.bcp-card-avatar {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.bcp-card-avatar > img {
+  width: 2rem;
+  margin-right: 0.75rem;
+}
+.bcp-card-avatar > a {
+  color: var(--color-black);
+  font-size: 0.875rem;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.attribution {
+  position: absolute;
+  left: 50%;
+  bottom: 1rem;
+  font-size: 0.75rem;
+  text-align: center;
+  transform: translateX(-50%);
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
