@@ -34,6 +34,7 @@ body {
   min-height:100vh;
   background-color: var(--color-primary);
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -113,16 +114,4 @@ body {
   font-size: 0.875rem;
   font-weight: 800;
   text-decoration: none;
-}
-
-.attribution {
-  position: absolute;
-  left: 50%;
-  bottom: 1rem;
-  font-size: 0.75rem;
-  text-align: center;
-  transform: translateX(-50%);
-}
-.attribution a {
-  color: hsl(228, 45%, 44%);
 }
